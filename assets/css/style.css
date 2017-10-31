@@ -81,16 +81,30 @@ a:hover{
  }
 
 
- #about_me_container,#portfolio_content,#contactcontainer{
+ #about_me_container, #portfolio_content, #contactcontainer{
  	clear:both;
  	float:left;
  	background-color:#ffffff;
- 	width:650px;
- 	height:700px;
  	margin-left:152.5px;
  	margin-bottom: 30px;
  	border:1px solid #dddddd;
  }
+
+ #about_me_container{
+ 	width:650px;
+ 	height:550px;
+ }
+
+#portfolio_content{
+	width:650px;
+ 	height:700px;
+}
+
+#contactcontainer{
+	width:650px;
+ 	height:450px;
+}
+
 
  #about_meheading, #portfolio_heading, #contact_heading{
 	margin:0 0 10px 10px;
@@ -188,7 +202,7 @@ h4{
 }
 .containerportfolioleft{
 	float:left;
-	width:280px;
+	width:300px;
 	height:190px;
 	margin-top:10px;
 	margin-left:20px;	
@@ -233,10 +247,6 @@ h4{
 	background-color: #a7b1b0;
 }
 
-#contactcontainer{
-	height:500px;
-}
-
 form{
 	margin-left:20px;
 }
@@ -249,9 +259,6 @@ label{
 }
 input{
 	width:610px;
-}
-#inputname,#inputemail{
-
 }
 
 #message{
@@ -278,3 +285,378 @@ p{
 	margin-left:10px;
 	margin-right:10px;
 }
+
+/* Media Queries*/
+
+/*980*/
+@media (max-width:980px){
+	#container{
+		width:980px;
+	}
+
+/*430 width*/
+ #about_me_container,#portfolio_content,#contactcontainer{
+ 	clear:both;
+ 	float:left;
+ 	background-color:#ffffff;
+ 	margin-left:152.5px;
+ 	margin-bottom: 30px;
+ 	border:1px solid #dddddd;
+}
+#about_me_container{
+ 	width:430px;
+ 	height:850px;
+ }
+
+#portfolio_content{
+	width:430px;
+ 	height:1100px;
+}
+
+#contactcontainer{
+	width:430px;
+ 	height:400px;
+}
+
+ #bio-image{
+	width:180px;
+	height:233px;
+	margin:0 auto;
+	padding:10px 125px 5px 125px;
+ }
+
+ #connect_container{
+ 	float:right;
+ 	background-color:#ffffff;
+ 	width:200px;
+ 	border:1px solid #dddddd;
+ 	margin-left:20px;
+ }
+
+#githubicon{
+ 	margin-left:25px;
+ }
+
+#linkeinicon{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.containerportfolioleft,.containerportfolioright{
+	float:left;
+	width:280px;
+	height:190px;
+	margin:5px 20px;
+	padding-left:45px;
+	padding-right:45px;
+	position:relative;
+	text-align: center;
+	color:white;
+}
+
+#hangmantext,#triviatext,#rocktext, #rpgtext,#rutgerstext{
+	position:absolute;
+	background-color:#40aaa5; 
+	top:100px;
+	left:45px;
+	padding:10px 100px;	
+}
+
+#hangmantext:hover,#triviatext:hover,#rocktext:hover{
+	background-color: #a7b1b0;
+}
+
+input{
+	width:390px;
+}
+
+#message{
+	height:150px;
+	width:390px;
+}
+
+#subbutton{
+	color:#ffffff;
+	font-size: 16px;
+	background-color:#40aaa5;
+	border:none;
+	padding:10px;
+	width:100px;
+}
+
+}
+
+/*768 w=713*/
+@media (max-width:768px){
+	#container{
+		width:768px;
+	}
+	
+	ul{
+ 	margin:0 20px 0 0;
+ 	padding:26px 0 26px 0;
+
+ }
+
+#about_me_container,#portfolio_content,#contactcontainer{
+ 	clear:both;
+ 	background-color:#ffffff;
+ 	padding:0;
+ 	margin:20px;
+ 	border:1px solid #dddddd;
+
+ }	
+
+ #about_me_container{
+ 	width:713px;
+ 	height:600px;
+ }
+
+#portfolio_content{
+	width:713px;
+ 	height:700px;
+}
+
+#contactcontainer{
+	width:713px;
+ 	height:400px;
+}
+
+
+#name_heading{
+ 	color: #ffffff;
+ 	background-color:#40aaa5;
+	float:left;
+ 	margin:0 0 0 20px;
+ 	padding:21.5px
+ }
+
+ #connect_container{
+ 	float:right;
+ 	background-color:#ffffff;
+ 	width:713px;
+ 	margin:20px;
+ 	border:1px solid #dddddd;
+ }
+
+#connect_heading{
+	text-align: left;
+	margin:0 0 10px 10px;
+	padding:20px 0 10px 10px;
+}
+
+
+
+.containerportfolioleft{
+	clear:both;
+	float:left;
+	width:300px;
+	height:190px;
+	padding:0;
+	margin-top:10px;
+	margin-left:20px;	
+	text-align: center;
+	color:white;
+}
+
+#hangmantext,#triviatext,#rocktext{
+	position:absolute;
+	background-color:#40aaa5; 
+	top:100px;
+	left:0px;
+	padding:10px 100px;	
+}
+
+.containerportfolioright{
+	float:right;
+	width:300px;
+	height:190px;
+	margin-top:10px;
+	margin-right:20px;
+	padding:0;
+	text-align: center;
+	color:white;
+}
+
+#rpgtext,#rutgerstext{
+	position:absolute;
+	background-color:#40aaa5; 
+	top:100px;
+	left:0px;
+	padding:10px 100px;
+}
+
+input{
+	width:663px;
+}
+
+#message{
+	height:150px;
+	width:663px;
+}
+
+#subbutton{
+	color:#ffffff;
+	font-size: 16px;
+	background-color:#40aaa5;
+	border:none;
+	padding:10px;
+	width:100px;
+}
+
+}
+
+@media (max-width:640px){
+	#container{
+		width:640px;
+	}
+
+#nav_container{
+	position:static;
+	background-color:#ffffff;
+	height:130px;
+	width:640px ;
+	border-bottom:2px solid #cccccc;
+}
+
+ #name_heading{
+ 	color: #ffffff;
+ 	background-color:#40aaa5;
+	float:left;
+ 	margin:0 auto;
+ 	padding-left:204.531px;
+ 	padding-right:204.531px;
+ }
+
+ ul{
+ 	float:left;
+ 	clear:both;
+ 	padding-left:218.0155px;
+
+ }
+
+ li{
+ 	display:inline;
+ 	color:#b1afa6;
+ 	
+ }
+
+#about_me_container,#portfolio_content,#contactcontainer{
+ 	clear:both;
+ 	float:left;
+ 	background-color:#ffffff;
+ 	margin-left:20px;
+ 	margin-bottom: 30px;
+ 	border:1px solid #dddddd;
+}
+#about_me_container{
+ 	width:600px;
+ 	height:850px;
+ }
+
+#portfolio_content{
+	width:600px;
+ 	height:1100px;
+}
+
+#contactcontainer{
+	width:600px;
+ 	height:400px;
+}
+
+ #bio-image{
+	width:180px;
+	height:233px;
+	padding:10px 210px 5px 210px;
+ }
+ p{
+ 	clear:both;
+ }
+
+#connect_container{
+ 	float:right;
+ 	background-color:#ffffff;
+ 	width:600px;
+ 	margin:20px;
+ 	border:1px solid #dddddd;
+ }
+
+#connect_heading{
+	text-align: left;
+	margin:0 0 10px 10px;
+	padding:20px 0 10px 10px;
+}
+
+
+#githubicon{
+ 	margin-left:25px;
+ }
+
+#linkeinicon{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.containerportfolioleft,.containerportfolioright{
+	float:left;
+	width:280px;
+	height:190px;
+	margin:5px 20px;
+	padding-left:150px;
+	padding-right:150px;
+	position:relative;
+	text-align: center;
+	color:white;
+}
+
+#hangmantext,#triviatext,#rocktext, #rpgtext,#rutgerstext{
+	position:absolute;
+	background-color:#40aaa5; 
+	top:100px;
+	left:150px;
+	padding:10px 100px;	
+}
+
+input{
+	width:550px;
+}
+
+#message{
+	height:150px;
+	width:550px;
+}
+
+#subbutton{
+	color:#ffffff;
+	font-size: 16px;
+	background-color:#40aaa5;
+	border:none;
+	padding:10px;
+	width:100px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
