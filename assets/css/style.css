@@ -432,7 +432,7 @@ input{
  }
 
  #connect_container{
- 	float:right;
+ 	float:left;
  	background-color:#ffffff;
  	width:713px;
  	margin:20px;
